@@ -1,13 +1,3 @@
-# v2-overflow
-
-## Project setup
-```
-npm install v2-overflow -S
-yarn add v2-overflow
-```
-
-## Demo
-```
 <template>
   <div id="app">
     <V2Overflow>
@@ -26,7 +16,7 @@ yarn add v2-overflow
 </template>
 
 <script>
-import V2Overflow from "v2-overflow";
+import V2Overflow from "./components/V2Overflow.vue";
 
 export default {
   name: "App",
@@ -35,4 +25,14 @@ export default {
   },
 };
 </script>
-```
+
+<style lang="less">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
