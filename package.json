@@ -1,6 +1,6 @@
 {
   "name": "v2-overflow",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Vue2.0基础上的rc-overflow",
   "main": "./src/index.js",
@@ -12,13 +12,13 @@
     "v-resize-observer": "^1.6.3"
   },
   "devDependencies": {
-    "vue": "^2.6.14",
-    "core-js": "^3.8.3",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "core-js": "^3.8.3",
     "less": "^4.0.0",
     "less-loader": "^8.0.0",
-    "vue-template-compiler": "^2.6.14"
+    "vue": "2.6.12",
+    "vue-template-compiler": "2.6.12"
   },
   "browserslist": [
     "> 1%",
@@ -29,5 +29,11 @@
     "type": "git",
     "url": "https://github.com/anywo/v2-overflow.git"
   },
-  "keywords": ["v2-overflow", "Vue", "rc-overflow", "Vue2.0", "anywo"]
+  "keywords": [
+    "v2-overflow",
+    "Vue",
+    "rc-overflow",
+    "Vue2.0",
+    "anywo"
+  ]
 }

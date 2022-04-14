@@ -73,8 +73,8 @@ export default {
         const mainW = box.offsetWidth;
         let maxW = 0;
         // 计算出需要隐藏的元素的开始index
-        let otherStartIndex = this.$slots.default.findIndex((x) => {
-          maxW += x.elm.offsetWidth;
+        let otherStartIndex = this.$refs.components.findIndex((x) => {
+          maxW += x.$el.offsetWidth;
           if (maxW > mainW) {
             return true;
           } else {
@@ -87,8 +87,8 @@ export default {
           const other = this.$refs.other;
           let otherW = mainW - maxW;
           for (otherStartIndex; otherStartIndex > 0; otherStartIndex--) {
-            const node = this.$slots.default[otherStartIndex];
-            otherW += node.elm.offsetWidth;
+            const node = this.$refs.components[otherStartIndex];
+            otherW += node.$el.offsetWidth;
             if (otherW > other.offsetWidth) break;
             else otherW += this.gap;
           }
